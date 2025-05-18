@@ -39,4 +39,11 @@ get selectedUserTasks() {
   return this.Tasks.filter((task)=> task.userId === this.id);
 }
 
+onCompleteTask(id:string){
+ this.Tasks = this.Tasks.filter((task)=> task.id!==id);
+}
+
+
+
+
 }
